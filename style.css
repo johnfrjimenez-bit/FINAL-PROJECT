@@ -11,15 +11,18 @@ a {
   text-decoration: none;
 }
 
-section {
-  padding: 0 32px;
+img {
+  width: 100%;
+}
+
+.container {
+  padding: 56px 0;
 }
 
 .row {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 32px;
 }
 
 .purple {
@@ -36,7 +39,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 32px;
+  padding: 32px 32px;
+  height: 60px;
 }
 
 .nav__logo {
@@ -44,6 +48,7 @@ nav {
   justify-content: center;
   align-items: center;
 }
+
 .nav__logo--img {
   height: 40px;
 }
@@ -92,18 +97,180 @@ HEADER
 #header {
   position: relative;
 }
-.header__container {
-  position: absolute;
-  padding: 96px 0;
+
+header .row {
   display: flex;
- justify-content: center;
+}
+
+.header__img--wrapper,
+.header__description {
+  width: 50%;
+}
+
+
+.header__description--para {
+  margin: 32px 0;
+}
+
+.header__container {
+  padding: 96px 32px;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
   display: flex;
   flex-direction: column;
+  font-size: 36px;
 }
 
-.header__description {
-  width: 40%;
+.header__email {
+    width: 100%;
+    height: 68px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__email--input {
+  width: 100%;
+  border-radius: 50px;
+  border: 2px solid rgb(229, 231, 235);
+  padding: 20px 192px 20px 32px;
+  color: rgb(36, 62, 99);
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: border-color 300ms;
+}
+
+.header__email--input::after {
+  color: #6415ff;
+}
+
+.header__email--btn {
+  z-index: 2;
+    margin: 8px;
+    height: calc(100% - 16px);
+    border-radius: 500px;
+    width: 160px;
+    border: none;
+    background-color: #6415ff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 300ms ease;
+}
+
+p.header__customers--title {
+  margin: 80px 0 0 0;
+}
+
+.header__customers {
+  margin: 16px 0 0;
+  padding: 0 64px 0 0;
+}
+
+p.header__customers--title,
+.header__customers{
+  opacity: 0.5;
+  scale: 0.9;
+}
+
+/* 
+
+FEATURES 
+
+*/
+
+#features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.row__narrow {
+  max-width: 1024px;
+}
+
+.section__title {
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+.section__headline {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: 1.25px;
+  margin: 16px 0;
+}
+
+.section__para {
+  text-align: center;
+  max-width: 576px;
+  margin: 0 auto;
+  color: #7c8ba1;
+  line-height: 1.5;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service {
+  display: flex;
+  width: calc(100%/3);
+  padding: 32px 24px;
+  text-align: left;
+}
+
+.service__img {
+  padding: 20px;
+  width: 64px;
+  border: solid 1px #e5e7eb;
+  border-radius: 50px;
+}
+
+.service__description {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0 0 16px;
+}
+
+.service__description--title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.service__description--para {
+  margin-top: 16px;
+    color: #7c8ba1;
+    line-height: 1.5;
+}
+
+/* 
+
+QUALITY WORK 
+
+*/
+
+
+.container {
+  display: flex;
+}
+
+.row {
+  width: 50%;
+}
+
+.quality__img--wrapper {
+  width: 50%;
 }
