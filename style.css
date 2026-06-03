@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
- padding: 0;
- margin: 0;
- box-sizing: border-box;
- font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 a {
@@ -76,8 +76,8 @@ nav {
 }
 
 .login {
- margin: 0 24px 0 48px;
- padding: 4px 0 0px;
+  margin: 0 24px 0 48px;
+  padding: 4px 0 0px;
 }
 
 .nav__link--primary {
@@ -86,6 +86,18 @@ nav {
   background-color: #6415ff;
   color: white;
   border-radius: 50px;
+}
+
+.btn {
+  background-color: #6415ff;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  transition: all 300ms ease;
+  cursor: pointer;
 }
 
 /* 
@@ -125,12 +137,12 @@ h1 {
 }
 
 .header__email {
-    width: 100%;
-    height: 68px;
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  width: 100%;
+  height: 68px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .header__email--input {
@@ -154,16 +166,16 @@ h1 {
 
 .header__email--btn {
   z-index: 2;
-    margin: 8px;
-    height: calc(100% - 16px);
-    border-radius: 500px;
-    width: 160px;
-    border: none;
-    background-color: #6415ff;
-    color: #fff;
-    font-weight: 700;
-    font-size: 16px;
-    transition: all 300ms ease;
+  margin: 8px;
+  height: calc(100% - 16px);
+  border-radius: 500px;
+  width: 160px;
+  border: none;
+  background-color: #6415ff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 300ms ease;
 }
 
 p.header__customers--title {
@@ -176,7 +188,7 @@ p.header__customers--title {
 }
 
 p.header__customers--title,
-.header__customers{
+.header__customers {
   opacity: 0.5;
   scale: 0.9;
 }
@@ -200,12 +212,10 @@ FEATURES
 }
 
 .section__title {
-  text-align: center;
   letter-spacing: 1.6px;
 }
 
 .section__headline {
-  text-align: center;
   font-size: 48px;
   font-weight: 900;
   letter-spacing: 1.25px;
@@ -213,11 +223,16 @@ FEATURES
 }
 
 .section__para {
-  text-align: center;
   max-width: 576px;
   margin: 0 auto;
   color: #7c8ba1;
   line-height: 1.5;
+}
+
+#features .section__title,
+#features .section__headline,
+#features .section__para {
+  text-align: center;
 }
 
 .services {
@@ -252,8 +267,8 @@ FEATURES
 
 .service__description--para {
   margin-top: 16px;
-    color: #7c8ba1;
-    line-height: 1.5;
+  color: #7c8ba1;
+  line-height: 1.5;
 }
 
 /* 
@@ -267,10 +282,151 @@ QUALITY WORK
   display: flex;
 }
 
-.row {
+#quality .row {
+  display: flex;
+  position: relative;
+}
+
+.quality__img--wrapper,
+.quality__description {
   width: 50%;
 }
 
-.quality__img--wrapper {
+.quality__description {
+  margin-right: 64px;
+}
+
+#quality .section__para {
+  margin: 0 0;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+#quality .btn {
+  margin: 32px 0 0 0;
+}
+
+/* 
+
+STEPS 
+
+*/
+
+#steps .row {
+  display: flex;
+}
+
+.steps__img--wrapper,
+.steps__description {
   width: 50%;
+}
+
+.steps__img--wrapper {
+  margin-top: 72px;
+}
+
+.steps__description {
+  margin: 32px 0 32px 64px;
+}
+
+.step__description {
+  margin-left: 24px;
+}
+
+.step {
+  display: flex;
+  margin-top: 32px;
+}
+
+.step__number {
+  color: #cbd5e0;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.step__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.step__para {
+  font-size: 14px;
+  color: #718096;
+  margin-top: 12px;
+  font-weight: 500;
+  line-height: 2;
+  max-width: 330px;
+}
+
+/* 
+
+VALUES 
+
+*/
+
+#values .row {
+  display: flex;
+}
+
+#values .section__para {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.625;
+  font-weight: 500;
+}
+
+.value {
+  margin: 32px 32px 0 0;
+}
+
+.values__list,
+.value__title {
+  display: flex;
+  align-items: center;
+}
+
+.value__name {
+  margin-left: 12px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.value__para {
+  margin: 12px 0 0;
+  color: #718096;
+}
+
+.values__img,
+.values__description {
+  width: 50%;
+}
+
+.values__description {
+  padding: 32px 64px 32px 0;
+}
+
+.value__img--wrapper {
+  width: 36px;
+  height: 36px;
+}
+
+.dollar,
+.briefcase {
+  padding: 7px 7px;
+  border-radius: 50px;
+}
+
+.dollar {
+  background-color: #9ae6b4;
+  color: #243E63;
+}
+
+.briefcase {
+  background-color: #feb2b2;
+}
+
+#values .btn {
+  margin-top: 48px;
 }
